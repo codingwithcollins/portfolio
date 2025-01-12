@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Collins Joshua Portfolio</title>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .btn {
+        background-color: #007bff;
+        color: #ffffff;
+      }
+      .btn:hover {
+        background-color: #0056b3;
+      }
+      .nav__logo a {
+        color: #000000;
+      }
+      .nav__links a {
+        color: #000000;
+      }
+      .nav__links a:hover {
+        color: #007bff;
+      }
+      .nav__btns .btn {
+        background-color: #007bff;
+      }
+      .header__content h1,
+      .header__content h2,
+      .header__content h3 {
+        color: #000000;
+      }
+      .header__btns .btn {
+        background-color: #007bff;
+      }
+      .header__btns .btn:hover {
+        background-color: #0056b3;
+      }
+      .section__header {
+        color: #000000;
+      }
+      .intro__grid h5 span,
+      .intro__flex div span {
+        color: #000000;
+      }
+      .portfolio__nav .btn {
+        background-color: #ffffff;
+        color: #000000;
+      }
+      .portfolio__nav .btn:hover {
+        background-color: #0056b3;
+      }
+      .portfolio__card-content .btn {
+        background-color: #007bff;
+      }
+      .portfolio__card-content .btn:hover {
+        background-color: #0056b3;
+      }
+      .skills__header {
+        color: #000000;
+      }
+      .skill__item i {
+        color: #000000;
+      }
+      .contact__header {
+        color: #000000;
+      }
+      .footer__socials a {
+        color: #000000;
+      }
+      .footer__socials a:hover {
+        color: #007bff;
+      }
+      .footer__bar {
+        color: #000000;
+      }
+    </style>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" id="scroll-progress"></div>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">CNJ<span>.</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <a href="https://wa.me/254717754487" target="_blank" class="btn">Hire Me</a>
+      </div>
+    </nav>
+
+    <header id="home">
+      <div class="section__container header__container">
+        <div class="header__content">
+          <h2>Hi, I am</h2>
+          <h1>Collins Joshua</h1>
+          <div id="typing-effect">
+            <!-- Dynamic typing effect will populate here -->
+          </div>
+          <p style="color: #000000;">
+            As a passionate web developer, software engineer, and graphic designer, I'm dedicated to crafting impactful solutions and delivering measurable results. Let's elevate your brand together!
+          </p>
+          <div class="header__btns">
+            <button class="btn">Download CV</button>
+            <a href="https://wa.me/254717754487" target="_blank" class="btn">Contact Me</a>
+          </div>
+        </div>
+        <div class="header__image">
+          <img src="assets/header.png" alt="Collins Joshua" />
+        </div>
+      </div>
+    </header>
+
+    <section class="section__container intro__container" id="intro">
+      <div class="intro__image">
+        <img src="assets/intro.png" alt="About Collins" />
+      </div>
+      <div class="intro__content">
+        <p class="section__subheader">My Intro</p>
+        <h2 class="section__header">About Me</h2>
+        <p class="intro__description">
+          I'm Collins Joshua, a dedicated Software Engineer and Graphic Designer with a proven track record of helping brands grow their online presence. With expertise in software development, graphic design, and content strategy, I combine creativity with data-driven insights to deliver impactful solutions.
+        </p>
+        <div class="intro__grid">
+          <h5>
+            <span><i class="ri-user-line"></i></span> Name
+          </h5>
+          <span>:</span>
+          <p>Collins Joshua</p>
+          <h5>
+            <span><i class="ri-phone-line"></i></span> Phone
+          </h5>
+          <span>:</span>
+          <p>(+254) 717754487</p>
+          <h5>
+            <span><i class="ri-mail-line"></i></span> Email
+          </h5>
+          <span>:</span>
+          <p>collinsnthia@gmail.com</p>
+        </div>
+        <h4>My Interests</h4>
+        <div class="intro__flex">
+          <div>
+            <span><i class="ri-headphone-line"></i></span> Music
+          </div>
+          <div>
+            <span><i class="ri-briefcase-3-line"></i></span> Travel
+          </div>
+          <div>
+            <span><i class="ri-film-line"></i></span> Movie
+          </div>
+          <div>
+            <span><i class="ri-camera-line"></i></span> Photography
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+      <div class="section__container portfolio__container">
+        <p class="section__subheader">My Portfolio</p>
+        <h2 class="section__header">Recent Works</h2>
+        <div class="portfolio__nav">
+          <button class="btn mixitup-control-active" data-filter="all" style="color: #000000; background-color: #ffffff;">
+            All
+          </button>
+          <button class="btn" data-filter=".web" style="color: #000000; background-color: #ffffff;">Web Apps</button>
+          <button class="btn" data-filter=".design" style="color: #000000; background-color: #ffffff;">Designs</button>
+          <button class="btn" data-filter=".ecommerce" style="color: #000000; background-color: #ffffff;">E-commerce</button>
+        </div>
+        <div class="portfolio__grid">
+          <div class="portfolio__card mix web">
+            <img src="assets/project-1.jpg" alt="Web Project" />
+            <div class="portfolio__card-content">
+              <h3>Web Project</h3>
+              <a href="https://github.com/yourusername/project-1" target="_blank" class="btn">View Project</a>
+              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+          <div class="portfolio__card mix design">
+            <img src="assets/project-2.jpg" alt="Design Project" />
+            <div class="portfolio__card-content">
+              <h3>Design Project</h3>
+              <a href="https://github.com/yourusername/project-2" target="_blank" class="btn">View Project</a>
+              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+          <div class="portfolio__card mix ecommerce">
+            <img src="assets/project-3.jpg" alt="E-commerce Project" />
+            <div class="portfolio__card-content">
+              <h3>E-commerce Project</h3>
+              <a href="https://github.com/yourusername/project-3" target="_blank" class="btn">View Project</a>
+              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials__container">
+        <h2 class="testimonials__header">Testimonials</h2>
+        <div class="testimonials__flip">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-1.jpg" alt="Photo of John Doe" class="testimonial__image">
+                <h4>James Mwangi</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"Collins is a fantastic developer! He delivered the project on time and exceeded our expectations."</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-2.jpg" alt="Photo of Jane Smith" class="testimonial__image">
+                <h4>Sir Ezekiel</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"Working with Collins was a pleasure. His design skills are top-notch."</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-3.jpg" alt="Photo of Michael Brown" class="testimonial__image">
+                <h4>Novacolabs web solutions</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"Collins' expertise in web development is exceptional. Highly recommended!"</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-4.jpg" alt="Photo of Emily Davis" class="testimonial__image">
+                <h4>Emily Davis</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"A true professional. Collins' work exceeded our expectations."</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-5.jpg" alt="Photo of Chris Johnson" class="testimonial__image">
+                <h4>Chris Johnson</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"Collins is a highly skilled developer. His attention to detail is impressive."</p>
+              </div>
+            </div>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/testimonial-6.jpg" alt="Photo of Sarah Lee" class="testimonial__image">
+                <h4>Sarah Lee</h4>
+              </div>
+              <div class="flip-card-back">
+                <p>"Collins' creativity and technical skills are unmatched. Highly recommend!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="skills">
+      <div class="skills__container">
+        <h2 class="skills__header">My Skills</h2>
+        <div class="skills__list">
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="90">
+            <i class="ri-html5-line"></i>
+            <h4>HTML</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 90%;"></div>
+            </div>
+            <span class="percentage-label">90%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="85">
+            <i class="ri-css3-line"></i>
+            <h4>CSS</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 85%;"></div>
+            </div>
+            <span class="percentage-label">85%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="80">
+            <i class="ri-javascript-line"></i>
+            <h4>JavaScript</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 80%;"></div>
+            </div>
+            <span class="percentage-label">80%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="70">
+            <i class="ri-nodejs-line"></i>
+            <h4>Node.js</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 70%;"></div>
+            </div>
+            <span class="percentage-label">70%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="65">
+            <i class="ri-database-line"></i>
+            <h4>SQL</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 65%;"></div>
+            </div>
+            <span class="percentage-label">65%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="85">
+            <i class="ri-git-branch-line"></i>
+            <h4>Git</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 85%;"></div>
+            </div>
+            <span class="percentage-label">85%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="60">
+            <i class="ri-paint-fill"></i>
+            <h4>Photoshop</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 60%;"></div>
+            </div>
+            <span class="percentage-label">60%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="70">
+            <i class="ri-java-line"></i>
+            <h4>Java</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 70%;"></div>
+            </div>
+            <span class="percentage-label">70%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="80">
+            <i class="ri-paint-brush-line"></i>
+            <h4>Graphic Design</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 80%;"></div>
+            </div>
+            <span class="percentage-label">80%</span>
+          </div>
+          <!-- Skill Item -->
+          <div class="skill__item" data-percentage="65">
+            <i class="ri-code-s-slash-line"></i>
+            <h4>C++</h4>
+            <div class="percentage-bar">
+              <div class="percentage-fill" style="width: 65%;"></div>
+            </div>
+            <span class="percentage-label">65%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <h2 class="contact__header">Contact Me</h2>
+        <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="portfolio-footer">
+      <div class="footer__container">
+        <!-- Footer Branding -->
+        <div class="footer__brand">
+          <h3 class="footer__logo">Collins<span>.</span></h3>
+          <p class="footer__tagline">Building innovative digital experiences.</p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="footer__contact">
+          <h4>Contact Me</h4>
+          <ul>
+            <li>Email: <a href="mailto:collins@example.com">collinsnthia@gmailom</a></li>
+            <li>Phone: <a href="tel:+1234567890">+254717754487</a></li>
+            <li>Location: Nairobi, Kenya</li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer__social">
+          <h4>Follow Me</h4>
+          <ul>
+            <li><a href="https://github.com/codingwithcollins" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/codingwithcollins" target="_blank">LinkedIn</a></li>
+            <li><a href="https://twitter.com/codingcollins" target="_blank">Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer__bottom">
+        <p>&copy; 2025 Collins. All rights reserved. Designed with ❤️ and dedication.</p>
+      </div>
+    </footer>
+
+    <div class="whatsapp-message" id="whatsapp-message">
+    get in touch
+    </div>
+    <a href="https://wa.me/254717754487" class="whatsapp-button" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js" defer></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const swiper = new Swiper('.testimonials__slider', {
+          slidesPerView: 3, // Show 3 slides at a time
+          spaceBetween: 30, // Space between slides in pixels
+          loop: false, // Enable infinite looping
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay: 5000, // Automatic sliding every 5 seconds
+          },
+          breakpoints: {
+            // Adjust number of slides based on screen width
+            640: {
+              slidesPerView: 1, // For smaller screens, show 1 slide
+            },
+            768: {
+              slidesPerView: 2, // For medium screens, show 2 slides
+            },
+            1024: {
+              slidesPerView: 3, // For larger screens, show 3 slides
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
+
