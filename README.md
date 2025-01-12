@@ -1,6 +1,6 @@
-# Web Design Mastery Portfolio
+# collins portfolio
 
-This is the portfolio website for Collins Joshua, a Software Engineer and Graphic Designer. The website showcases his skills, services, and recent works.
+This is the portfolio website for Collins Joshua, a Software Engineer and web developer. The website showcases his skills, services, and recent works.
 
 ## Features
 
