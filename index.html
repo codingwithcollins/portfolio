@@ -7,6 +7,10 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -86,16 +90,43 @@
       .footer__bar {
         color: #000000;
       }
+      /* Button styles */
+.roll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Button color */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  cursor: pointer;
+  display: none; /* Initially hidden */
+  z-index: 1000;
+}
+
+.roll-to-top-btn:hover {
+  background-color: #0056b3; /* Hover effect */
+}
+
     </style>
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- Slick Carousel CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    
   </head>
   <body>
     <div class="scroll-progress" id="scroll-progress"></div>
     <nav>
       <div class="nav__header">
         <div class="nav__logo">
-          <a href="#">CNJ<span>.</span></a>
+          <a href="#">Collins<span>.</span></a>
         </div>
         <div class="nav__menu__btn" id="menu-btn">
           <i class="ri-menu-line"></i>
@@ -123,6 +154,7 @@
           <p style="color: #000000;">
             As a passionate web developer, software engineer, and graphic designer, I'm dedicated to crafting impactful solutions and delivering measurable results. Let's elevate your brand together!
           </p>
+          
           <div class="header__btns">
             <button class="btn">Download CV</button>
             <a href="https://wa.me/254717754487" target="_blank" class="btn">Contact Me</a>
@@ -144,6 +176,10 @@
         <p class="intro__description">
           I'm Collins Joshua, a dedicated Software Engineer and Graphic Designer with a proven track record of helping brands grow their online presence. With expertise in software development, graphic design, and content strategy, I combine creativity with data-driven insights to deliver impactful solutions.
         </p>
+        <p class="intro__description">
+          I'm the Founder and Lead Developer of <a href="https://www.novacolabstechnologies.com" target="_blank" style="color: #000; font-weight: bold;">NovaCoLabs Technologies</a>, a dedicated Software development company. With a proven track record of helping brands grow their online presence, I specialize in software development, graphic design, and content strategy. I combine creativity with data-driven insights to deliver impactful solutions that make a real difference.
+        </p>
+        
         <div class="intro__grid">
           <h5>
             <span><i class="ri-user-line"></i></span> Name
@@ -178,7 +214,6 @@
         </div>
       </div>
     </section>
-
     <section class="portfolio" id="portfolio">
       <div class="section__container portfolio__container">
         <p class="section__subheader">My Portfolio</p>
@@ -193,204 +228,147 @@
         </div>
         <div class="portfolio__grid">
           <div class="portfolio__card mix web">
-            <img src="assets/project-1.jpg" alt="Web Project" />
+            <img src="assets/novamart.png" alt="Novamart Project" />
             <div class="portfolio__card-content">
-              <h3>Web Project</h3>
-              <a href="https://github.com/yourusername/project-1" target="_blank" class="btn">View Project</a>
-              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
-            </div>
-          </div>
-          <div class="portfolio__card mix design">
-            <img src="assets/project-2.jpg" alt="Design Project" />
-            <div class="portfolio__card-content">
-              <h3>Design Project</h3>
-              <a href="https://github.com/yourusername/project-2" target="_blank" class="btn">View Project</a>
-              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
+              <h3>Novamart</h3>
+              <p class="project-description">A comprehensive e-commerce platform with a focus on online grocery shopping, designed for a seamless user experience.</p>
+              <div class="portfolio__card-footer">
+                <a href="https://github.com/yourusername/novamart" target="_blank" class="btn">View Project</a>
+                <a href="https://novamartdemo.com" target="_blank" class="btn">Demo</a>
+              </div>
             </div>
           </div>
           <div class="portfolio__card mix ecommerce">
-            <img src="assets/project-3.jpg" alt="E-commerce Project" />
+            <img src="assets/novaconstruction.png" alt="NovaConstruction Project" />
             <div class="portfolio__card-content">
-              <h3>E-commerce Project</h3>
-              <a href="https://github.com/yourusername/project-3" target="_blank" class="btn">View Project</a>
-              <a href="https://yourprojectdemo.com" target="_blank" class="btn">Demo</a>
+              <h3>NovaConstruction</h3>
+              <p class="project-description">A platform revolutionizing the construction industry by enhancing project management, team collaboration, and sustainability insights.</p>
+              <div class="portfolio__card-footer">
+                <a href="https://github.com/yourusername/novaconstruction" target="_blank" class="btn">View Project</a>
+                <a href="https://novaconstructiondemo.com" target="_blank" class="btn">Demo</a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio__card mix design">
+            <img src="assets/novalearn.png" alt="NovaLearn Project" />
+            <div class="portfolio__card-content">
+              <h3>NovaLearn</h3>
+              <p class="project-description">An innovative Learning Management System (LMS) designed to facilitate modern, interactive, and efficient online education.</p>
+              <div class="portfolio__card-footer">
+                <a href="https://github.com/yourusername/novalearn" target="_blank" class="btn">View Project</a>
+                <a href="https://novalearndemo.com" target="_blank" class="btn">Demo</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-
+    
     <section class="testimonials" id="testimonials">
       <div class="testimonials__container">
         <h2 class="testimonials__header">Testimonials</h2>
-        <div class="testimonials__flip">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-1.jpg" alt="Photo of John Doe" class="testimonial__image">
-                <h4>James Mwangi</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"Collins is a fantastic developer! He delivered the project on time and exceeded our expectations."</p>
-              </div>
-            </div>
+        <div class="testimonials__slider">
+          <!-- Testimonial 1 -->
+          <div class="testimonial__card">
+            <img src="assets/testimonial-1.jpg" alt="Photo of James Mwangi" class="testimonial__image">
+            <h4>James Mwangi</h4>
+            <p>"Collins is a fantastic developer! He delivered the project on time and exceeded our expectations."</p>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-2.jpg" alt="Photo of Jane Smith" class="testimonial__image">
-                <h4>Sir Ezekiel</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"Working with Collins was a pleasure. His design skills are top-notch."</p>
-              </div>
-            </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial__card">
+            <img src="assets/testimonial-2.jpg" alt="Photo of Sir Ezekiel" class="testimonial__image">
+            <h4>Sir Ezekiel</h4>
+            <p>"Working with Collins was a pleasure. His design skills are top-notch."</p>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-3.jpg" alt="Photo of Michael Brown" class="testimonial__image">
-                <h4>Novacolabs web solutions</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"Collins' expertise in web development is exceptional. Highly recommended!"</p>
-              </div>
-            </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial__card">
+            <img src="assets/testimonial-3.jpg" alt="Photo of Novacolabs web solutions" class="testimonial__image">
+            <h4>Novacolabs web solutions</h4>
+            <p>"Collins' expertise in web development is exceptional. Highly recommended!"</p>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-4.jpg" alt="Photo of Emily Davis" class="testimonial__image">
-                <h4>Emily Davis</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"A true professional. Collins' work exceeded our expectations."</p>
-              </div>
-            </div>
+          <!-- More testimonials here -->
+          
+        </div>
+      </div>
+    </section>
+    
+  
+    <section class="work-process">
+      <h2>My Work Process</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            🔍
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-5.jpg" alt="Photo of Chris Johnson" class="testimonial__image">
-                <h4>Chris Johnson</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"Collins is a highly skilled developer. His attention to detail is impressive."</p>
-              </div>
-            </div>
+          <div class="text">
+            <h3>Research & Discovery</h3>
+            <p>Understand client needs and gather project insights.</p>
           </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="assets/testimonial-6.jpg" alt="Photo of Sarah Lee" class="testimonial__image">
-                <h4>Sarah Lee</h4>
-              </div>
-              <div class="flip-card-back">
-                <p>"Collins' creativity and technical skills are unmatched. Highly recommend!"</p>
-              </div>
-            </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            📊
+          </div>
+          <div class="text">
+            <h3>Planning & Strategy</h3>
+            <p>Define goals, scope, and create wireframes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            🎨
+          </div>
+          <div class="text">
+            <h3>Design</h3>
+            <p>Create high-fidelity designs and UI/UX prototypes.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            💻
+          </div>
+          <div class="text">
+            <h3>Development</h3>
+            <p>Write code to bring designs to life, set up databases.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            🔧
+          </div>
+          <div class="text">
+            <h3>Testing</h3>
+            <p>Test the project for bugs and ensure functionality.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            🚀
+          </div>
+          <div class="text">
+            <h3>Deployment</h3>
+            <p>Launch the project live on the web.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="icon">
+            <span class="arrow">&#8595;</span>
+            💬
+          </div>
+          <div class="text">
+            <h3>Post-Launch & Feedback</h3>
+            <p>Monitor the project and gather user feedback.</p>
           </div>
         </div>
       </div>
     </section>
-
-    <section class="skills" id="skills">
-      <div class="skills__container">
-        <h2 class="skills__header">My Skills</h2>
-        <div class="skills__list">
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="90">
-            <i class="ri-html5-line"></i>
-            <h4>HTML</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 90%;"></div>
-            </div>
-            <span class="percentage-label">90%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="85">
-            <i class="ri-css3-line"></i>
-            <h4>CSS</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 85%;"></div>
-            </div>
-            <span class="percentage-label">85%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="80">
-            <i class="ri-javascript-line"></i>
-            <h4>JavaScript</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 80%;"></div>
-            </div>
-            <span class="percentage-label">80%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="70">
-            <i class="ri-nodejs-line"></i>
-            <h4>Node.js</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 70%;"></div>
-            </div>
-            <span class="percentage-label">70%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="65">
-            <i class="ri-database-line"></i>
-            <h4>SQL</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 65%;"></div>
-            </div>
-            <span class="percentage-label">65%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="85">
-            <i class="ri-git-branch-line"></i>
-            <h4>Git</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 85%;"></div>
-            </div>
-            <span class="percentage-label">85%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="60">
-            <i class="ri-paint-fill"></i>
-            <h4>Photoshop</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 60%;"></div>
-            </div>
-            <span class="percentage-label">60%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="70">
-            <i class="ri-java-line"></i>
-            <h4>Java</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 70%;"></div>
-            </div>
-            <span class="percentage-label">70%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="80">
-            <i class="ri-paint-brush-line"></i>
-            <h4>Graphic Design</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 80%;"></div>
-            </div>
-            <span class="percentage-label">80%</span>
-          </div>
-          <!-- Skill Item -->
-          <div class="skill__item" data-percentage="65">
-            <i class="ri-code-s-slash-line"></i>
-            <h4>C++</h4>
-            <div class="percentage-bar">
-              <div class="percentage-fill" style="width: 65%;"></div>
-            </div>
-            <span class="percentage-label">65%</span>
-          </div>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="contact" id="contact">
       <div class="contact__container">
@@ -405,6 +383,10 @@
       </div>
     </section>
 
+    <button id="rollToTopBtn" class="roll-to-top-btn" title="Go to top">
+      ↑
+    </button>
+    
     <footer class="portfolio-footer">
       <div class="footer__container">
         <!-- Footer Branding -->
@@ -451,9 +433,15 @@
       </div>
     </footer>
 
-    <div class="whatsapp-message" id="whatsapp-message">
-    get in touch
-    </div>
+   <!-- Popup Message -->
+<div id="whatsappPopup" class="popup">
+  <div class="popup-content">
+    <span class="close-btn" id="closeBtn">&times;</span>
+    <h3>Start a Conversation</h3>
+    <p>Click the button below to message us on WhatsApp!</p>
+    <a href="https://wa.me/yourphonenumber?text=Hello" target="_blank" class="whatsapp-btn">Say Hello</a>
+  </div>
+</div>
     <a href="https://wa.me/254717754487" class="whatsapp-button" target="_blank">
       <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
     </a>
@@ -463,6 +451,11 @@
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
     <script src="main.js" defer></script>
+
+    <!-- Slick Carousel JS -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script>
       document.addEventListener('DOMContentLoaded', function () {
         const swiper = new Swiper('.testimonials__slider', {
@@ -494,7 +487,71 @@
           },
         });
       });
+     
+     
+  $(document).ready(function(){
+    $('.testimonials__slider').slick({
+      infinite: true,            // Infinite scrolling
+      slidesToShow: 3,           // Show 3 items at once
+      slidesToScroll: 1,         // Scroll one item at a time
+      autoplay: true,            // Enable autoplay
+      autoplaySpeed: 3000,       // 3 seconds autoplay interval
+      dots: true,                // Show navigation dots
+      arrows: true,              // Enable left and right arrows
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 2       // Show 2 items for medium screens
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1       // Show 1 item for small screens
+          }
+        }
+      ]
+    });
+  });
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const progressCircles = document.querySelectorAll('.progress-circle');
+    
+    progressCircles.forEach(circle => {
+        const progress = circle.getAttribute('data-progress');
+        const circleProgress = circle.querySelector('.circle-progress');
+        
+        // Animate progress circle fill
+        circleProgress.style.strokeDasharray = `${progress}, 100`;
+    });
+});
+
+// Get elements
+const whatsappBtn = document.getElementById("whatsappBtn");
+const popup = document.getElementById("whatsappPopup");
+const closeBtn = document.getElementById("closeBtn");
+
+// Show popup on button click
+whatsappBtn.onclick = function() {
+  popup.style.display = "block";
+}
+
+// Close popup when close button is clicked
+closeBtn.onclick = function() {
+  popup.style.display = "none";
+}
+
+// Close popup if clicked outside the popup content
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+}
+
     </script>
+
   </body>
 </html>
 
