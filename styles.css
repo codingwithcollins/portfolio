@@ -807,7 +807,7 @@ header {
   padding: 4rem 2rem;
   background-color: #ffffff; /* Set background to white */
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+ 
   position: relative;
 }
 
@@ -1297,11 +1297,7 @@ header {
 }
 
 /* ...existing code... */
-.testimonials__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
+
 /* ...existing code... */
 
 /* ...existing code... */
@@ -1402,185 +1398,11 @@ header {
 }
 /* ...existing code... */
 
-/* General Styles */
-.skills {
-  background-color: #f9f9f9;
-  padding: 3rem 1.5rem;
-  text-align: center;
-}
 
-.skills__header {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 2rem;
-  position: relative;
-}
-
-.skills__header::after {
-  content: "";
-  display: block;
-  width: 100px;
-  height: 3px;
-  background-color: #00aaff;
-  margin: 1rem auto 0;
-}
-
-/* Skills Container */
-.skills__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.5rem;
-}
-
-.skill__item {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.skill__item:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.skill__item i {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-}
-
-.skill__item[data-percentage="90"] i {
-  color: #e34c26; /* HTML5 color */
-}
-
-.skill__item[data-percentage="85"] i {
-  color: #264de4; /* CSS3 color */
-}
-
-.skill__item[data-percentage="80"] i {
-  color: #f0db4f; /* JavaScript color */
-}
-
-.skill__item[data-percentage="70"] i {
-  color: #68a063; /* Node.js color */
-}
-
-.skill__item[data-percentage="65"] i {
-  color: #f29111; /* SQL color */
-}
-
-.skill__item[data-percentage="85"] i {
-  color: #f34f29; /* Git color */
-}
-
-.skill__item[data-percentage="60"] i {
-  color: #31a8ff; /* Photoshop color */
-}
-
-.skill__item[data-percentage="70"] i {
-  color: #007396; /* Java color */
-}
-
-.skill__item[data-percentage="80"] i {
-  color: #ff6347; /* Graphic Design color */
-}
-
-.skill__item[data-percentage="65"] i {
-  color: #00599c; /* C++ color */
-}
-
-.percentage {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #ffaa00;
-  margin-top: 0.5rem;
-}
-
-/* Progress Bar Animation */
-.skill__item .percentage {
-  position: relative;
-  background-color: #eee;
-  border-radius: 50px;
-  overflow: hidden;
-  height: 8px;
-  width: 100%;
-  margin: 1rem auto;
-}
-
-.skill__item .percentage::before {
-  content: "";
-  display: block;
-  background: linear-gradient(90deg, #00aaff, #ffaa00);
-  height: 100%;
-  width: 0;
-  animation: fill-bar 2s ease forwards;
-  border-radius: inherit;
-}
-
-/* Animations */
-@keyframes bounce {
-  0%, 100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes fill-bar {
-  from {
-    width: 0;
-  }
-  to {
-    width: 90%; /* Adjust for each skill dynamically */
-  }
-}
-
-/* Section Entrance */
-.skills {
-  opacity: 0;
-  transform: translateY(50px);
-  animation: fadeInUp 1.5s ease forwards;
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* ...existing code... */
 
-/* ...existing code... */
-.percentage-bar {
-  position: relative;
-  background-color: #eee;
-  border-radius: 50px;
-  overflow: hidden;
-  height: 8px;
-  width: 100%;
-  margin: 1rem auto;
-}
 
-.percentage-fill {
-  background: #0084ff; /* Mint green */
-  height: 100%;
-  border-radius: inherit;
-}
-
-.percentage-label {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #0066ff;
-  margin-top: 0.5rem;
-}
 /* ...existing code... */
 
 /* ...existing code... */
@@ -1629,76 +1451,6 @@ header {
 /* ...existing code... */
 
 /* ...existing code... */
-
-.testimonials__flip {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 100%;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-}
-
-.flip-card-front {
-  background-color: #fff;
-}
-
-.flip-card-back {
-  background-color: #007bff;
-  color: white;
-  transform: rotateY(180deg);
-}
-
-.testimonial__image {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  margin-bottom: 15px;
-}
-
-.testimonial__name {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.testimonial__text {
-  font-size: 1rem;
-  color: #fff;
-  line-height: 1.5;
-}
 
 /* ...existing code... */
 
